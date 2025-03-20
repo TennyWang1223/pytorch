@@ -23,7 +23,7 @@ include(${CMAKE_SOURCE_DIR}/cmake/public/LoadHIP.cmake)
 
 # full path for CK library on compute-artifactory.amd.com
 set(url "https://compute-artifactory.amd.com/artifactory/rocm-generic-local")
-set(ck_lib_full_path "${url}/torch_ck_gen_lib/ck_${ck_commit_hash}/${ROCM_VERSION_DEV}/libck_kernels.so")
+set(ck_lib_full_path "${url}/torch_ck_gen_lib/ck_${ck_commit_hash}/rocm_${ROCM_VERSION_DEV}/libck_kernels.so")
 
 # set destination
 set(destination "${CMAKE_SOURCE_DIR}/torch/lib/libck_kernels.so")
